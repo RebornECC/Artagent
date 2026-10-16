@@ -1,0 +1,18 @@
+{
+  "geode": "5.10.1",
+  "gd": { "android": "2.2081" },
+  "id": "user.artagent",
+  "name": "Art Agent",
+  "version": "v0.2.0",
+  "developer": "you",
+  "description": "Выдели блоки, опиши арт: план -> рисунок в форме блоков -> объекты. Для телефона.",
+  "settings": {
+    "api-key":    { "type": "string", "name": "OpenRouter API key", "default": "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" },
+    "img-url":    { "type": "string", "name": "Image URL (chat endpoint)", "default": "https://openrouter.ai/api/v1/chat/completions" },
+    "img-model":  { "type": "string", "name": "Image model", "default": "google/gemini-2.5-flash-image" },
+    "text-url":   { "type": "string", "name": "Chat URL", "default": "https://openrouter.ai/api/v1/chat/completions" },
+    "text-model": { "type": "string", "name": "Text model", "default": "google/gemini-2.5-flash" },
+    "limit":      { "type": "int", "name": "Object limit", "default": 800, "min": 50, "max": 5000 },
+    "colors":     { "type": "int", "name": "Colors", "default": 8, "min": 2, "max": 16 }
+  }
+}
